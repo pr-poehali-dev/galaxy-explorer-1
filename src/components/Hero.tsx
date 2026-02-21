@@ -1,9 +1,9 @@
 ""
 
 import { useState, useEffect } from "react"
-import { X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { GodRays, MeshGradient } from "@paper-design/shaders-react"
+import Icon from "@/components/ui/icon"
 
 export default function Hero() {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -305,7 +305,7 @@ export default function Hero() {
                 className="absolute right-6 top-6 z-10 flex h-10 w-10 items-center justify-center text-white bg-transparent transition-colors hover:bg-white/10 rounded-full"
                 aria-label="Закрыть"
               >
-                <X className="h-5 w-5" />
+                <Icon name="X" size={20} />
               </motion.button>
             </motion.div>
           </div>
